@@ -90,7 +90,7 @@
                 <div class="beneficio">
                     <div class="beneficio__cont">                        
                         <div class="beneficio__img">
-                            <img src="images/crea.jpg" alt="Crea o mejora tu canal de stream" class="img">
+                            <img src="images/crea.jpg" alt="Crea o mejora tu canal de stream" class="img" loading="lazy">
                         </div>
                         <div class="beneficio__copy">
                             <p>Crea o mejora tu canal de stream para llegar a un producto profesional que te permita incrementar tus seguidores y obtener un ingreso del mismo. </p>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="beneficio__cont">                        
                         <div class="beneficio__img">
-                            <img src="images/aprende.jpg" alt="Aprende a utilizar herramientas de transmisión" class="img">
+                            <img src="images/aprende.jpg" alt="Aprende a utilizar herramientas de transmisión" class="img" loading="lazy">
                         </div>
                         <div class="beneficio__copy">
                             <p>Aprende a utilizar herramientas de transmisión, entretenimiento y productividad para profesionalizar tus “en vivos”</p>
@@ -106,7 +106,7 @@
                     </div>
                     <div class="beneficio__cont">
                         <div class="beneficio__img">
-                            <img src="images/homeoffice.jpg" alt="Trabaja desde casa" class="img">
+                            <img src="images/homeoffice.jpg" alt="Trabaja desde casa" class="img" loading="lazy">
                         </div>
                         <div class="beneficio__copy">
                             <p>Trabaja desde casa, a cualquier edad y aprende cómo hacerlo con conocimientos del mundo empresarial y la industria del entretenimiento en línea, con proyectos que entreguen valor y sean exitosos, atrayendo suscriptores, patrocinadores y clientes.</p>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="beneficio__cont">
                         <div class="beneficio__img">
-                            <img src="images/emprende.jpg" alt="Emprende una nueva carrera" class="img">
+                            <img src="images/emprende.jpg" alt="Emprende una nueva carrera" class="img" loading="lazy">
                         </div>
                         <div class="beneficio__copy">
                             <p>Emprende una nueva carrera y conviértete en un streamer exitoso o aprende a reconocer oportunidades laborales en el medio del entretenimiento en línea y colocate en una empresa de tecnología.</p>
@@ -205,7 +205,7 @@
                             </ul>
                         </div>
                         <div class="curso__img">
-                            <img src="images/cursos.png" alt="cursos" class="img">
+                            <img src="images/cursos.png" alt="cursos" class="img" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -220,7 +220,7 @@
                     </div>
                     <div class="presentador__cont">
                         <div class="presentador__img">
-                            <img src="images/presentador.png" alt="presentador" class="img">
+                            <img src="images/presentador.png" alt="presentador" class="img" loading="lazy">
                         </div>
                         <div class="presentador__copy">
                             <h3>Mauricio Zebel</h3>
@@ -236,7 +236,7 @@
                 <div class="presentadores">
                     <div class="presentadores__cont">
                         <div class="presentadores__img">
-                            <img src="images/presentadores.jpg" alt="presentador 1" class="img">
+                            <img src="images/presentadores.jpg" alt="presentador 1" class="img" loading="lazy">
                         </div>
                         <div class="presentadores__copy">
                             <p>“Martin” es nuestro speaker incognito,, profesionista, emprendedor y experto en las transmisiones en linea, con mas de 20 años de experiencia. Su trayectoria comprende eventos multitudinarios en vivo, torneos de esports y la transmisión de todos tipo de experiencias en línea.</p>
@@ -270,22 +270,22 @@
                 <div class="cierre">
                     <div class="cierre__cont">
                             <span>1</span>
-                            <img src="images/cierre1.png" alt="2 horas diaras" loading="lazy" class="img">
+                            <img src="images/cierre1.png" alt="2 horas diaras" loading="lazy" class="img" loading="lazy">
                             <p>2 horas diarias con un maestro en vivo, horario por la mañana o por la tarde</p>
                     </div>
                     <div class="cierre__cont">
                             <span>2</span>
-                            <img src="images/cierre2.png" alt="24 semanas de clases" loading="lazy" class="img">
+                            <img src="images/cierre2.png" alt="24 semanas de clases" loading="lazy" class="img" loading="lazy">
                             <p>24 semanas de clases y puedes realizar el pago semanalmente.</p>
                     </div>
                     <div class="cierre__cont">
                             <span>3</span>
-                            <img src="images/cierre3.png" alt="Trabajarás sobre tu proyecto" loading="lazy" class="img">
+                            <img src="images/cierre3.png" alt="Trabajarás sobre tu proyecto" loading="lazy" class="img" loading="lazy">
                             <p>Durante cada clase aprenderás el tema y trabajaras sobre tu proyecto. </p>
                     </div>
                     <div class="cierre__cont">
                             <span>4</span>
-                            <img src="images/cierre4.png" alt="Practicas reales" loading="lazy" class="img">
+                            <img src="images/cierre4.png" alt="Practicas reales" loading="lazy" class="img" loading="lazy">
                             <p>Al menos una vez al mes harás prácticas reales sobre las plataformas de nuestros aliados con público de verdad en vivo.</p>
                     </div>
                 </div>
@@ -305,6 +305,40 @@
                         </div>
                         <div class="registro__promo__cont">
                             <h5>Medios de pago:</h5>
+                            <div class="registro__promo--pago">
+                                <div id="smart-button-container">
+                                    <div style="text-align: center;">
+                                      <div id="paypal-button-container"></div>
+                                    </div>
+                                  </div>
+                                <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+                                <script>
+                                  function initPayPalButton() {
+                                    paypal.Buttons({
+                                      style: {
+                                        shape: 'rect',
+                                        color: 'blue',
+                                        layout: 'vertical',
+                                        label: 'paypal',
+                                      },
+                                      createOrder: function(data, actions) {
+                                        return actions.order.create({
+                                          purchase_units: [{"description":"1 semana curso Streamer Profesional","amount":{"currency_code":"USD","value":19.5}}]
+                                        });
+                                      },
+                                      onApprove: function(data, actions) {
+                                        return actions.order.capture().then(function(details) {
+                                          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                        });
+                                      },
+                                      onError: function(err) {
+                                        console.log(err);
+                                      }
+                                    }).render('#paypal-button-container');
+                                  }
+                                  initPayPalButton();
+                                </script>
+                            </div>
                             <p>Tarjeta de crédito, tarjeta de débito, Paypal, Mercado Pago, efectivo*, deposito en cuenta*, transferencia interbancaria*</p>
                             <p>*Medios de pago solo disponibles en México
                                 Facturación disponible solo en transferencias bancarias y depósito en cuenta.
@@ -390,7 +424,26 @@
     </main>
 
     <footer>
-
+        <div class="container">
+            <div class="footer">
+                <div class="footer__logo">
+                    <img src="images/wissen.svg" alt="logo wissen" loading="lazy">
+                </div>
+                <div class="footer__aviso">
+                    <a href="/aviso-de-privacidad.html" target="_blank">
+                        Aviso de privacidad
+                    </a>
+                </div>
+                <div class="footer__redes">                    
+                    <a href="https://www.facebook.com/ditalmx" target="_blank" aria-label="Facebook Dital">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dital.mx/" target="_blank" aria-label="Instagram Dital">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html> 

@@ -287,9 +287,13 @@ header #logo img{
 }
 .registro__promo__cont h5{
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+}
+.registro__promo--pago{
+    margin-bottom: 20px;
 }
 .registro__promo__cont p{
+    font-size: 14px;
     margin-bottom: 10px;
 }
 .registro__form{
@@ -359,6 +363,42 @@ header #logo img{
 .faq p{
     margin-left: 25px;
 }
+footer{
+    background: #4e4ae5;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.footer__logo{
+    padding: 20px 50px;
+    width: 33.3333%;
+}
+.footer__logo img{
+    filter: grayscale(1);
+}
+.footer__aviso{
+    display: flex;
+    justify-content: center;
+    width: 33.3333%;
+}
+.footer__aviso a{
+    color: #FFF;
+}
+.footer__redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3333%;
+}
+.footer__redes i{
+    color: #FFF;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
 /*CLASES*/
 .container{
     display: block;
@@ -530,6 +570,21 @@ header #logo img{
     }
     .registro__form{
         border-radius: 0 0 6px 6px;
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer__logo {
+        padding: 20px 50px;
+        width: 100%;
+    }
+    .footer__aviso {
+        padding: 30px 0;
+        width: 100%;
+    }
+    .footer__redes {
+        padding: 30px 0;
         width: 100%;
     }
 }
